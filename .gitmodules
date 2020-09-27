@@ -1,0 +1,3 @@
+[submodule "client"]
+	path = client
+	url = git@github.com:dima7a14/food_stock_web.git
