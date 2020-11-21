@@ -24,7 +24,7 @@ export default function (app: Application): Model<any> {
     },
     unit: {
       type: String,
-      required: true,
+      default: '',
     },
   }, {
     timestamps: true
