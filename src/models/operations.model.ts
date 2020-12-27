@@ -9,9 +9,6 @@ export default function (app: Application): Model<any> {
   const modelName = 'operations';
   const mongooseClient: Mongoose = app.get('mongooseClient');
   const { Schema } = mongooseClient;
-  
-  // const productSchema = new Schema({});
-
   const schema = new Schema({
     description: {
       type: String,
@@ -36,10 +33,9 @@ export default function (app: Application): Model<any> {
         },
         unit: {
           type: String,
-          required: true,
+          default: '',
         },
       }],
-      default: [],
       required: true,
     },
     intoStock: {

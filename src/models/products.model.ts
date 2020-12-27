@@ -13,7 +13,6 @@ export default function (app: Application): Model<any> {
     title: {
       type: String,
       required: true,
-      unique: true,
     },
     description: {
       type: String,
